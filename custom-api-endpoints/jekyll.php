@@ -14,7 +14,6 @@
   * [ ] be aware of jekyll specific fields like "date"
   * [ ] API endpoint for multiple entries (with delimiter? Offer zip download? ...)
   
-  
 */
 
 // set params and options
