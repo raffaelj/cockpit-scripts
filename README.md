@@ -1,0 +1,3 @@
+# useful scripts for Cockpit - https://getcockpit.com
+
+code snippets...
