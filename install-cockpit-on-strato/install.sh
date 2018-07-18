@@ -64,7 +64,7 @@ echo created defines.php with custom paths
 
 # copy i18n for the backend
 mkdir -p $cockpit/config/cockpit/i18n
-wget -O $cockpit/config/cockpit/i18n/$lang.php  $i18nfile
+wget -O $cockpit/config/cockpit/i18n/$lang.php $i18nfile
 echo downloaded and saved i18n file for backend
 
 # create config file
