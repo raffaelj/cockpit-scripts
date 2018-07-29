@@ -1,6 +1,13 @@
 <?php
 
 /*
+
+  This file exists as a reference, but don't use it.
+  Use https://github.com/raffaelj/cockpit_FormValidation/ instead.
+  It's an addon with cleaner code and more features and it works 
+  without the mentioned PR below.
+  
+
   custom form validation for spam protection for cockpit
   
   needs Pull request: https://github.com/agentejo/cockpit/pull/798
