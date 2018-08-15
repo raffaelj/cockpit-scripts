@@ -5,9 +5,9 @@
   
   place this file in /cockpit/config/api/collections/count.php
   
-  call it with https://urltocockpit.de/api/collections/count?token=mysecettoken&collection=mycollection
+  call it with https://urltocockpit.de/api/collections/count?token=mysecrettoken&collection=mycollection
   
-  or call it with https://urltocockpit.de/api/collections/count?token=mysecettoken
+  or call it with https://urltocockpit.de/api/collections/count?token=mysecrettoken
   and send json like : {"collection":"mycollection"}
 
 */
