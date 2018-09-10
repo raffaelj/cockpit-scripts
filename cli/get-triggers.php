@@ -25,7 +25,7 @@ $print     = $app->param('print', null);
 // settings
 $extensions = ['php', 'md', 'html', 'js', 'tag'];
 $strings    = [];
-$dirs       = [COCKPIT_DIR.'/modules'];
+$dirs       = [COCKPIT_DIR.'/modules', COCKPIT_DIR.'/lib/Lime'];
 
 foreach ($dirs as $dir) {
 
