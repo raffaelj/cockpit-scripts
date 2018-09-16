@@ -26,11 +26,16 @@ $print     = $app->param('print', null);
 $extensions = ['php', 'md', 'html', 'js', 'tag'];
 $strings    = [];
 $dirs       = [COCKPIT_DIR.'/modules', COCKPIT_DIR.'/lib/Lime'];
+$files      = [COCKPIT_DIR.'/index.php', COCKPIT_DIR.'/bootstrap.php'];
 
-foreach ($dirs as $dir) {
+$triggers = [];
 
-    $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir), RecursiveIteratorIterator::SELF_FIRST);
-
+// iterate function
+function iterate($iterator) {
+    
+    global $extensions;
+    global $triggers;
+    
     foreach ($iterator as $file) {
 
         if (in_array($file->getExtension(), $extensions)) {
@@ -55,7 +60,25 @@ foreach ($dirs as $dir) {
 
         }
     }
+    
 }
+
+// dirs
+foreach ($dirs as $dir) {
+
+    $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir), RecursiveIteratorIterator::SELF_FIRST);
+    
+    iterate($iterator);
+
+}
+
+// files
+foreach ($files as $filename) {
+    
+    $filelist[] = new SPLFileObject($filename);
+    
+}
+iterate($filelist);
 
 if (count($triggers)) {
 
