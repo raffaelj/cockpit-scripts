@@ -77,5 +77,8 @@ i18n: $lang
 EOF
 
 # run install to create admin user
-# to do...
+#
+# didn't test on the remote, but worked on local machine
+# output is ugly, because it's the whole html...
 
+#php $cockpit/install/index.php
