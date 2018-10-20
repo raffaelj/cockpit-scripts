@@ -3,6 +3,8 @@
 /*
   Unique slugs for collections in Cockpit - https://github.com/agentejo/cockpit
   
+  Use the addon UniqueSlugs for more features: https://github.com/raffaelj/cockpit_UniqueSlugs
+  
   Place this code or copy this file in `/config/bootstrap.php`
   and adjust collection, field and slug name below.
   
