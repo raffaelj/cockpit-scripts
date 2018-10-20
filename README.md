@@ -11,7 +11,7 @@ And please update to Version 0.8.2 or above. There were a few securitiy fixes fo
 
 ## Informations about Cockpit
 
-It is a bit confusing, to find the right place to find informations or to ask for help.
+It was a bit confusing in the past, to find the right places for informations or to ask for help.
 
 * [Cockpit Community Forum](https://discourse.getcockpit.com/) --> the place to ask for help
 * [Official Docs](https://getcockpit.com/documentation) --> needs some help to get up to date
@@ -29,36 +29,36 @@ It is a bit confusing, to find the right place to find informations or to ask fo
 
 ## Cockpit Addons
 
-[List of Cockpit Addons](https://discourse.getcockpit.com/t/list-of-cockpit-addons/234)
+Curated [List of Cockpit Addons](https://discourse.getcockpit.com/t/list-of-cockpit-addons/234) in the Community Forum
 
 ### Addons, I wrote
 
 Most of them are "work in progress". Feel free to contribute.
 
-**[SelectRequestOptions](https://github.com/raffaelj/cockpit_SelectRequestOptions)**
+#### [SelectRequestOptions](https://github.com/raffaelj/cockpit_SelectRequestOptions)
 
-Select field with options based on custom requests
+Select field with options based on (custom) requests
 
-**[cockpit_FormValidation](https://github.com/raffaelj/cockpit_FormValidation)**
+#### [FormValidation](https://github.com/raffaelj/cockpit_FormValidation)
 
-form builder and form validator
+Form builder and form validator
 
 * supports honeypot and content validation to trick spam bots
 
-**[cockpit_Feed](https://github.com/raffaelj/cockpit_Feed)**
+#### [Feed](https://github.com/raffaelj/cockpit_Feed)
 
 RSS Feed output for collections
 
-**[UniqueSlugs](https://github.com/raffaelj/cockpit_UniqueSlugs)**
+#### [UniqueSlugs](https://github.com/raffaelj/cockpit_UniqueSlugs)
 
 Create unique slugs if you don't want the `_id` as unique identifier.
 
 * supports slug generation of nested fields
 
-**[cockpit_ModuleLink](https://github.com/raffaelj/cockpit_ModuleLink)**
+#### [ModuleLink](https://github.com/raffaelj/cockpit_ModuleLink)
 
 Create and populate whole modules instead of single collection entries.
 
-**[cockpit_MoreOptions](https://github.com/raffaelj/cockpit_MoreOptions)**
+#### [MoreOptions](https://github.com/raffaelj/cockpit_MoreOptions)
 
-test addon, some more features for collections, may change completely over time
+Test addon, some more features for collections, may change completely over time
