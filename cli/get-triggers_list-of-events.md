@@ -109,7 +109,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\views\\base\\dashboard.php',
+        0 => 'path/to/cockpit/modules/Cockpit/views/base/dashboard.php',
       ),
     ),
     'admin.dashboard.header' => 
@@ -120,7 +120,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\views\\base\\dashboard.php',
+        0 => 'path/to/cockpit/modules/Cockpit/views/base/dashboard.php',
       ),
     ),
     'admin.dashboard.top' => 
@@ -131,7 +131,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\views\\base\\dashboard.php',
+        0 => 'path/to/cockpit/modules/Cockpit/views/base/dashboard.php',
       ),
     ),
     'admin.dashboard.widgets' => 
@@ -142,7 +142,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\Controller\\Base.php',
+        0 => 'path/to/cockpit/modules/Cockpit/Controller/Base.php',
       ),
     ),
     'admin.init' => 
@@ -153,7 +153,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\index.php',
+        0 => 'path/to/cockpit/index.php',
       ),
     ),
     'after' => 
@@ -164,7 +164,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\lib\\Lime\\App.php',
+        0 => 'path/to/cockpit/lib/Lime/App.php',
       ),
     ),
     'app.layout.contentafter' => 
@@ -175,7 +175,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\views\\layouts\\app.php',
+        0 => 'path/to/cockpit/modules/Cockpit/views/layouts/app.php',
       ),
     ),
     'app.layout.contentbefore' => 
@@ -186,7 +186,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\views\\layouts\\app.php',
+        0 => 'path/to/cockpit/modules/Cockpit/views/layouts/app.php',
       ),
     ),
     'app.layout.footer' => 
@@ -197,7 +197,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\views\\layouts\\app.php',
+        0 => 'path/to/cockpit/modules/Cockpit/views/layouts/app.php',
       ),
     ),
     'app.layout.header' => 
@@ -208,7 +208,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\views\\layouts\\app.php',
+        0 => 'path/to/cockpit/modules/Cockpit/views/layouts/app.php',
       ),
     ),
     'app.{$controller}.init' => 
@@ -219,7 +219,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\AuthController.php',
+        0 => 'path/to/cockpit/modules/Cockpit/AuthController.php',
       ),
     ),
     'before' => 
@@ -230,7 +230,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\lib\\Lime\\App.php',
+        0 => 'path/to/cockpit/lib/Lime/App.php',
       ),
     ),
     'cockpit.account.editview' => 
@@ -241,7 +241,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\views\\accounts\\account.php',
+        0 => 'path/to/cockpit/modules/Cockpit/views/accounts/account.php',
       ),
     ),
     'cockpit.account.login' => 
@@ -252,7 +252,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\Controller\\Auth.php',
+        0 => 'path/to/cockpit/modules/Cockpit/Controller/Auth.php',
       ),
     ),
     'cockpit.account.logout' => 
@@ -263,7 +263,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\module\\auth.php',
+        0 => 'path/to/cockpit/modules/Cockpit/module/auth.php',
       ),
     ),
     'cockpit.accounts.save' => 
@@ -274,8 +274,8 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\Controller\\Accounts.php',
-        1 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\Controller\\RestApi.php',
+        0 => 'path/to/cockpit/modules/Cockpit/Controller/Accounts.php',
+        1 => 'path/to/cockpit/modules/Cockpit/Controller/RestApi.php',
       ),
     ),
     'cockpit.api.authenticate' => 
@@ -286,7 +286,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\rest-api.php',
+        0 => 'path/to/cockpit/modules/Cockpit/rest-api.php',
       ),
     ),
     'cockpit.api.erroronrequest' => 
@@ -297,7 +297,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\rest-api.php',
+        0 => 'path/to/cockpit/modules/Cockpit/rest-api.php',
       ),
     ),
     'cockpit.api.js' => 
@@ -308,7 +308,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\views\\api.js',
+        0 => 'path/to/cockpit/modules/Cockpit/views/api.js',
       ),
     ),
     'cockpit.assets.list' => 
@@ -319,7 +319,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\module\\assets.php',
+        0 => 'path/to/cockpit/modules/Cockpit/module/assets.php',
       ),
     ),
     'cockpit.assets.remove' => 
@@ -330,7 +330,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\module\\assets.php',
+        0 => 'path/to/cockpit/modules/Cockpit/module/assets.php',
       ),
     ),
     'cockpit.assets.save' => 
@@ -341,7 +341,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\module\\assets.php',
+        0 => 'path/to/cockpit/modules/Cockpit/module/assets.php',
       ),
     ),
     'cockpit.auth.setuser' => 
@@ -352,7 +352,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\module\\auth.php',
+        0 => 'path/to/cockpit/modules/Cockpit/module/auth.php',
       ),
     ),
     'cockpit.bootstrap' => 
@@ -363,7 +363,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\bootstrap.php',
+        0 => 'path/to/cockpit/bootstrap.php',
       ),
     ),
     'cockpit.clearcache' => 
@@ -374,7 +374,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Cockpit/bootstrap.php',
       ),
     ),
     'cockpit.export' => 
@@ -385,7 +385,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\cli\\export.php',
+        0 => 'path/to/cockpit/modules/Cockpit/cli/export.php',
       ),
     ),
     'cockpit.filestorages.init' => 
@@ -396,7 +396,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\bootstrap.php',
+        0 => 'path/to/cockpit/bootstrap.php',
       ),
     ),
     'cockpit.import' => 
@@ -407,7 +407,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\cli\\import.php',
+        0 => 'path/to/cockpit/modules/Cockpit/cli/import.php',
       ),
     ),
     'cockpit.media.removefiles' => 
@@ -418,7 +418,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\Controller\\Media.php',
+        0 => 'path/to/cockpit/modules/Cockpit/Controller/Media.php',
       ),
     ),
     'cockpit.media.rename' => 
@@ -429,7 +429,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\Controller\\Media.php',
+        0 => 'path/to/cockpit/modules/Cockpit/Controller/Media.php',
       ),
     ),
     'cockpit.media.upload' => 
@@ -440,7 +440,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\Controller\\Media.php',
+        0 => 'path/to/cockpit/modules/Cockpit/Controller/Media.php',
       ),
     ),
     'cockpit.menu.aside' => 
@@ -451,7 +451,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\views\\layouts\\app.php',
+        0 => 'path/to/cockpit/modules/Cockpit/views/layouts/app.php',
       ),
     ),
     'cockpit.menu.main' => 
@@ -462,7 +462,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\views\\layouts\\app.php',
+        0 => 'path/to/cockpit/modules/Cockpit/views/layouts/app.php',
       ),
     ),
     'cockpit.request.error' => 
@@ -475,7 +475,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\admin.php',
+        0 => 'path/to/cockpit/modules/Cockpit/admin.php',
       ),
     ),
     'cockpit.rest.init' => 
@@ -486,7 +486,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\rest-api.php',
+        0 => 'path/to/cockpit/modules/Cockpit/rest-api.php',
       ),
     ),
     'cockpit.search' => 
@@ -497,7 +497,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\Controller\\Base.php',
+        0 => 'path/to/cockpit/modules/Cockpit/Controller/Base.php',
       ),
     ),
     'cockpit.settings.infopage.aside' => 
@@ -508,7 +508,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\views\\settings\\info.php',
+        0 => 'path/to/cockpit/modules/Cockpit/views/settings/info.php',
       ),
     ),
     'cockpit.settings.infopage.main' => 
@@ -519,7 +519,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\views\\settings\\info.php',
+        0 => 'path/to/cockpit/modules/Cockpit/views/settings/info.php',
       ),
     ),
     'cockpit.update.after' => 
@@ -530,7 +530,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\Controller\\Settings.php',
+        0 => 'path/to/cockpit/modules/Cockpit/Controller/Settings.php',
       ),
     ),
     'cockpit.update.before' => 
@@ -541,7 +541,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\Controller\\Settings.php',
+        0 => 'path/to/cockpit/modules/Cockpit/Controller/Settings.php',
       ),
     ),
     'cockpit.view.settings' => 
@@ -552,7 +552,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\views\\settings\\index.php',
+        0 => 'path/to/cockpit/modules/Cockpit/views/settings/index.php',
       ),
     ),
     'cockpit.view.settings.item' => 
@@ -563,7 +563,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\views\\settings\\index.php',
+        0 => 'path/to/cockpit/modules/Cockpit/views/settings/index.php',
       ),
     ),
     'collections.createcollection' => 
@@ -574,7 +574,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Collections/bootstrap.php',
       ),
     ),
     'collections.entry.aside' => 
@@ -585,7 +585,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\views\\entry.php',
+        0 => 'path/to/cockpit/modules/Collections/views/entry.php',
       ),
     ),
     'collections.find.after' => 
@@ -596,7 +596,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Collections/bootstrap.php',
       ),
     ),
     'collections.find.after.{$name}' => 
@@ -607,7 +607,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Collections/bootstrap.php',
       ),
     ),
     'collections.find.before' => 
@@ -618,7 +618,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Collections/bootstrap.php',
       ),
     ),
     'collections.find.before.{$name}' => 
@@ -629,7 +629,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Collections/bootstrap.php',
       ),
     ),
     'collections.remove.after' => 
@@ -640,7 +640,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Collections/bootstrap.php',
       ),
     ),
     'collections.remove.after.{$name}' => 
@@ -651,7 +651,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Collections/bootstrap.php',
       ),
     ),
     'collections.remove.before' => 
@@ -662,7 +662,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Collections/bootstrap.php',
       ),
     ),
     'collections.remove.before.{$name}' => 
@@ -673,7 +673,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Collections/bootstrap.php',
       ),
     ),
     'collections.removecollection' => 
@@ -684,7 +684,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Collections/bootstrap.php',
       ),
     ),
     'collections.removecollection.{$name}' => 
@@ -695,7 +695,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Collections/bootstrap.php',
       ),
     ),
     'collections.save.after' => 
@@ -706,7 +706,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Collections/bootstrap.php',
       ),
     ),
     'collections.save.after.{$name}' => 
@@ -717,7 +717,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Collections/bootstrap.php',
       ),
     ),
     'collections.save.before' => 
@@ -728,7 +728,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Collections/bootstrap.php',
       ),
     ),
     'collections.save.before.{$name}' => 
@@ -739,7 +739,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Collections/bootstrap.php',
       ),
     ),
     'collections.updatecollection' => 
@@ -750,7 +750,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Collections/bootstrap.php',
       ),
     ),
     'collections.updatecollection.{$name}' => 
@@ -761,7 +761,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Collections/bootstrap.php',
       ),
     ),
     'duplicate-entry' => 
@@ -772,7 +772,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\assets\\entries-tree.tag',
+        0 => 'path/to/cockpit/modules/Collections/assets/entries-tree.tag',
       ),
     ),
     'field.layout.components' => 
@@ -783,8 +783,8 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\assets\\components\\field-layout.tag',
-        1 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\assets\\components.js',
+        0 => 'path/to/cockpit/modules/Cockpit/assets/components/field-layout.tag',
+        1 => 'path/to/cockpit/modules/Cockpit/assets/components.js',
       ),
     ),
     'forms.save.after' => 
@@ -795,7 +795,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Forms\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Forms/bootstrap.php',
       ),
     ),
     'forms.save.after.{$name}' => 
@@ -806,7 +806,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Forms\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Forms/bootstrap.php',
       ),
     ),
     'forms.save.before' => 
@@ -817,7 +817,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Forms\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Forms/bootstrap.php',
       ),
     ),
     'forms.save.before.{$name}' => 
@@ -828,7 +828,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Forms\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Forms/bootstrap.php',
       ),
     ),
     'forms.submit.after' => 
@@ -839,7 +839,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Forms\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Forms/bootstrap.php',
       ),
     ),
     'forms.submit.before' => 
@@ -850,7 +850,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Forms\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Forms/bootstrap.php',
       ),
     ),
     'init-html-editor' => 
@@ -861,8 +861,8 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\assets\\components\\field-html.tag',
-        1 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\assets\\components.js',
+        0 => 'path/to/cockpit/modules/Cockpit/assets/components/field-html.tag',
+        1 => 'path/to/cockpit/modules/Cockpit/assets/components.js',
       ),
     ),
     'init-wysiwyg-editor' => 
@@ -873,8 +873,8 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\assets\\components\\field-wysiwyg.tag',
-        1 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\assets\\components.js',
+        0 => 'path/to/cockpit/modules/Cockpit/assets/components/field-wysiwyg.tag',
+        1 => 'path/to/cockpit/modules/Cockpit/assets/components.js',
       ),
     ),
     'ready' => 
@@ -885,8 +885,8 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\assets\\components\\codemirror.tag',
-        1 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\assets\\components.js',
+        0 => 'path/to/cockpit/modules/Cockpit/assets/components/codemirror.tag',
+        1 => 'path/to/cockpit/modules/Cockpit/assets/components.js',
       ),
     ),
     'remove-entry' => 
@@ -897,7 +897,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\assets\\entries-tree.tag',
+        0 => 'path/to/cockpit/modules/Collections/assets/entries-tree.tag',
       ),
     ),
     'selectionchange' => 
@@ -908,9 +908,9 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\assets\\components\\cp-assets.tag',
-        1 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\assets\\components\\cp-finder.tag',
-        2 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\assets\\components.js',
+        0 => 'path/to/cockpit/modules/Cockpit/assets/components/cp-assets.tag',
+        1 => 'path/to/cockpit/modules/Cockpit/assets/components/cp-finder.tag',
+        2 => 'path/to/cockpit/modules/Cockpit/assets/components.js',
       ),
     ),
     'shutdown' => 
@@ -921,7 +921,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\lib\\Lime\\App.php',
+        0 => 'path/to/cockpit/lib/Lime/App.php',
       ),
     ),
     'singleton.getData.after' => 
@@ -932,7 +932,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Singletons\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Singletons/bootstrap.php',
       ),
     ),
     'singleton.getData.after.{$name}' => 
@@ -943,7 +943,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Singletons\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Singletons/bootstrap.php',
       ),
     ),
     'singleton.remove' => 
@@ -954,7 +954,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Singletons\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Singletons/bootstrap.php',
       ),
     ),
     'singleton.remove.{$name}' => 
@@ -965,7 +965,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Singletons\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Singletons/bootstrap.php',
       ),
     ),
     'singleton.save.after' => 
@@ -976,7 +976,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Singletons\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Singletons/bootstrap.php',
       ),
     ),
     'singleton.save.after.{$name}' => 
@@ -987,7 +987,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Singletons\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Singletons/bootstrap.php',
       ),
     ),
     'singleton.save.before' => 
@@ -998,7 +998,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Singletons\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Singletons/bootstrap.php',
       ),
     ),
     'singleton.save.before.{$name}' => 
@@ -1009,7 +1009,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Singletons\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Singletons/bootstrap.php',
       ),
     ),
     'singleton.saveData.after' => 
@@ -1020,7 +1020,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Singletons\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Singletons/bootstrap.php',
       ),
     ),
     'singleton.saveData.after.{$name}' => 
@@ -1031,7 +1031,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Singletons\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Singletons/bootstrap.php',
       ),
     ),
     'singleton.saveData.before' => 
@@ -1042,7 +1042,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Singletons\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Singletons/bootstrap.php',
       ),
     ),
     'singleton.saveData.before.{$name}' => 
@@ -1053,7 +1053,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Singletons\\bootstrap.php',
+        0 => 'path/to/cockpit/modules/Singletons/bootstrap.php',
       ),
     ),
     'singletons.form.aside' => 
@@ -1064,7 +1064,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Singletons\\views\\form.php',
+        0 => 'path/to/cockpit/modules/Singletons/views/form.php',
       ),
     ),
     'sort-update' => 
@@ -1075,7 +1075,7 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\assets\\entries-tree.tag',
+        0 => 'path/to/cockpit/modules/Collections/assets/entries-tree.tag',
       ),
     ),
     'submit' => 
@@ -1086,8 +1086,8 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\assets\\components\\field-wysiwyg.tag',
-        1 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Cockpit\\assets\\components.js',
+        0 => 'path/to/cockpit/modules/Cockpit/assets/components/field-wysiwyg.tag',
+        1 => 'path/to/cockpit/modules/Cockpit/assets/components.js',
       ),
     ),
     'update' => 
@@ -1098,9 +1098,9 @@ Content of `triggers.php`, which was created after calling `./cp get-triggers.ph
       ),
       'files' => 
       array (
-        0 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Collections\\views\\collection.php',
-        1 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Forms\\views\\form.php',
-        2 => 'E:\\xampp7\\htdocs\\cpfresh\\modules\\Singletons\\views\\singleton.php',
+        0 => 'path/to/cockpit/modules/Collections/views/collection.php',
+        1 => 'path/to/cockpit/modules/Forms/views/form.php',
+        2 => 'path/to/cockpit/modules/Singletons/views/singleton.php',
       ),
     ),
   ),
