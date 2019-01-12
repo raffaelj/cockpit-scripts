@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Explanation of all paths and constants 
+</title>
+    <style type="text/css">html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0}body{font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:14px;line-height:1.6;color:#333;background-color:#fff;padding:0;width:920px;max-width:100%;margin:0 auto}@media print{body{width:100%;color:#000}}body>*:first-child{margin-top:0 !important}body>*:last-child{margin-bottom:0 !important}p,blockquote,ul,ol,dl,table,pre{margin:15px 0}h1,h2,h3,h4,h5,h6{margin:20px 0 10px;padding:0;font-weight:bold;-webkit-font-smoothing:antialiased;color:#222;clear:both}@media print{h1,h2,h3,h4,h5,h6{color:#000}}h1 tt,h1 code,h2 tt,h2 code,h3 tt,h3 code,h4 tt,h4 code,h5 tt,h5 code,h6 tt,h6 code{font-size:inherit}h1{font-size:28px}h2{font-size:24px;border-bottom:1px solid #ccc}h3{font-size:18px}h4{font-size:16px}h5{font-size:14px}h6{color:#777;font-size:14px}body>h2:first-child,body>h1:first-child,body>h1:first-child+h2,body>h3:first-child,body>h4:first-child,body>h5:first-child,body>h6:first-child{margin-top:0;padding-top:0}a:first-child h1,a:first-child h2,a:first-child h3,a:first-child h4,a:first-child h5,a:first-child h6{margin-top:0;padding-top:0}h1+p,h2+p,h3+p,h4+p,h5+p,h6+p{margin-top:10px}a{color:#4183C4;text-decoration:none}a:hover{text-decoration:underline}ul,ol{padding-left:1.5em}ul li>:first-child,ol li>:first-child,ul li ul:first-of-type,ol li ol:first-of-type,ul li ol:first-of-type,ol li ul:first-of-type{margin-top:0px}ul ul,ul ol,ol ol,ol ul{margin-bottom:0}dl{padding:0}dl dt{font-size:14px;font-weight:bold;font-style:italic;padding:0;margin:15px 0 5px}dl dt:first-child{padding:0}dl dt>:first-child{margin-top:0px}dl dt>:last-child{margin-bottom:0px}dl dd{margin:0 0 15px;padding:0 15px}dl dd>:first-child{margin-top:0px}dl dd>:last-child{margin-bottom:0px}pre,code,tt{font-size:12px;font-family:Consolas, "Liberation Mono", Courier, monospace}code,tt{margin:0 0px;padding:0px 0px;white-space:nowrap;border:1px solid #eaeaea;background-color:#f8f8f8;border-radius:3px}pre>code{margin:0;padding:0;white-space:pre;border:none;background:transparent}pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}@media print{pre{background-color:transparent}}pre code,pre tt{background-color:transparent;border:none}kbd{-moz-border-bottom-colors:none;-moz-border-left-colors:none;-moz-border-right-colors:none;-moz-border-top-colors:none;background-color:#DDDDDD;background-image:linear-gradient(#F1F1F1, #ddd);background-repeat:repeat-x;border-color:#DDDDDD #CCCCCC #CCCCCC #DDDDDD;border-image:none;border-radius:2px 2px 2px 2px;border-style:solid;border-width:1px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;line-height:10px;padding:1px 4px}blockquote{border-left:4px solid #DDD;padding:0 15px;color:#777}blockquote>:first-child{margin-top:0px}blockquote>:last-child{margin-bottom:0px}hr{clear:both;margin:15px 0;height:0px;overflow:hidden;border:none;background:transparent;border-bottom:4px solid #ddd;padding:0}table{margin:0 auto;width:100%;text-align:left;-webkit-hyphens:none;-moz-hyphens:none;hyphens:none}table th,table td{padding:0.2em .5em;vertical-align:top}table th{border-bottom:1px solid #ccc;font-weight:bold}table tr{background-color:#fafafa}table tr:nth-child(2n){background-color:#f2f2f2}@media print{table{border-collapse:collapse}table th,table td{border:1px solid #ccc}}img{max-width:100%}li p{display:inline}li ul,li ol{margin-top:0;margin-bottom:0}body{text-align:justify;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;background-color:#fafafa}ul{text-align:left}.info{display:block;clear:both;padding:.5em;font-size:.9em;border:1px solid #ccc;border-radius:5px}ul.info,ol.info{padding-left:1.5em}.right{float:right;clear:right;margin:0 0 .5em 1em;width:25%}.left{float:left;clear:left;margin:0 1em .5em 0;width:25%}.center{margin:0 auto;text-align:center}img.center{display:block}.smaller{font-size:.8em}.alert{border:2px solid tomato}.asset{border:1px dashed #ccc}.hidden{display:none}.img3cm{width:3cm}.img4cm{width:4cm}.img6cm{width:6cm}.imgh4cm{height:4cm}.round{border-radius:50%}.table{display:table-cell;width:50%;padding:0em 1em}img.shadow,p.shadow img{-webkit-box-shadow:3px 3px 8px -2px;-moz-box-shadow:3px 3px 8px -2px;box-shadow:3px 3px 8px -2px}@media print{img.shadow,p.shadow img{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;border-radius:.5mm}}img.saturate,p.saturate img{-webkit-filter:saturate(0.2);filter:saturate(0.2);-webkit-transition:filter 0.4s ease-in-out;-moz-transition:filter 0.4s ease-in-out;-o-transition:filter 0.4s ease-in-out;transition:filter 0.4s ease-in-out}img.saturate:hover,img.saturate:focus,p.saturate img:hover,p.saturate img:focus{-webkit-filter:saturate(1);filter:saturate(1)}@media print{img.saturate,p.saturate img{-webkit-filter:saturate(1);filter:saturate(1)}}main{max-width:98%;margin:0 auto}@media print{main{max-width:auto}}.jumptotop{display:block;position:fixed;bottom:5px;right:2px;height:0;width:0;border-color:transparent transparent rgba(0,0,0,0.1);border-radius:5px;border-style:solid;border-width:15px}@media print{.jumptotop{display:none}}h2{counter-increment:h2counter}h2::before{content:counter(h2counter) ". "}h1,h2,h3,h4,h5,h6{text-align:left}#markdown-toc{position:fixed;right:0;top:5px;width:200px;display:block;padding:0;margin:0;z-index:5;-webkit-hyphens:none;-moz-hyphens:none;hyphens:none}@media print{#markdown-toc{display:none}}@media (max-width: 1300px){#markdown-toc{right:-200px;height:40px}#markdown-toc:before{content:"Inhaltsverzeichnis";display:block;width:66px;height:46px;padding:2px;line-height:23px;background:rgba(0,0,0,0.7);position:fixed;right:0;top:5px;border-radius:5px 0px 0px 5px;color:#fff;text-align:center;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto}#markdown-toc:hover,#markdown-toc:focus-within{right:0;height:auto;z-index:1}#markdown-toc:hover:before,#markdown-toc:focus-within:before{display:none}}#markdown-toc a{display:block;font-size:1em;padding:.1em .3em;background-color:#fff;color:#222;text-decoration:none;border-radius:.2em;border-bottom:1px dashed #ccc}#markdown-toc a:hover{color:#fff;background-color:#222}#markdown-toc ul{display:block;padding:0;background-color:#fafafa}#markdown-toc ul ul{position:absolute;display:none;width:200px;background-color:rgba(0,0,0,0.3);border-top-left-radius:.2em;border-bottom-left-radius:.2em}#markdown-toc ul ul ul{top:0}#markdown-toc li{position:relative;display:block;padding:.2em;text-align:left}#markdown-toc li:hover>ul{display:block;z-index:10}#markdown-toc>li>ul li:hover>ul{left:-200px;top:0}.letterhead{width:100%;text-align:right}@media (max-width: 980px){.letterhead{text-align:left}}@media print{.letterhead{height:32%;text-align:right}}.footnotes{border-top:1px solid #ccc}@media print{a{color:#000}h2:first-of-type{page-break-before:avoid}h2,h3,h4,h5,h6{page-break-after:avoid}h1+h2,h2+h3,h3+h4,h4+h5,h5+h6{page-break-before:avoid}ul,ol,li{page-break-inside:auto}p,ul,ol,li{orphans:2;widows:2}img,pre,blockquote,.info{page-break-inside:avoid}body{background-color:#fff}.no-print{display:none}}
+/*# sourceMappingURL=style.min.css.map */
+    </style>
+  </head>
+  <body id="top">
+    <main>
+<h1 id="explanation-of-all-paths-and-constants">Explanation of all paths and constants</h1>
+
+<p>The example paths are on an <a href="https://manual.uberspace.de/">Uberspace 7</a> in <code>~/html/cockpit</code>.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#explanation-of-all-paths-and-constants" id="markdown-toc-explanation-of-all-paths-and-constants">Explanation of all paths and constants</a>    <ul>
+      <li><a href="#type-constants" id="markdown-toc-type-constants">type constants</a>        <ul>
+          <li><a href="#cockpit_admin" id="markdown-toc-cockpit_admin">COCKPIT_ADMIN</a></li>
+          <li><a href="#cockpit_cli" id="markdown-toc-cockpit_cli">COCKPIT_CLI</a></li>
+          <li><a href="#cockpit_api_request" id="markdown-toc-cockpit_api_request">COCKPIT_API_REQUEST</a></li>
+        </ul>
+      </li>
+      <li><a href="#other-constants" id="markdown-toc-other-constants">other constants</a>        <ul>
+          <li><a href="#cockpit_start_time" id="markdown-toc-cockpit_start_time">COCKPIT_START_TIME</a></li>
+          <li><a href="#cockpit_admin_route" id="markdown-toc-cockpit_admin_route">COCKPIT_ADMIN_ROUTE</a></li>
+        </ul>
+      </li>
+      <li><a href="#path-constants" id="markdown-toc-path-constants">path constants</a>        <ul>
+          <li><a href="#cockpit_base_url" id="markdown-toc-cockpit_base_url">COCKPIT_BASE_URL</a></li>
+          <li><a href="#cockpit_base_route" id="markdown-toc-cockpit_base_route">COCKPIT_BASE_ROUTE</a></li>
+          <li><a href="#cockpit_site_dir" id="markdown-toc-cockpit_site_dir">COCKPIT_SITE_DIR</a></li>
+          <li><a href="#cockpit_docs_root" id="markdown-toc-cockpit_docs_root">COCKPIT_DOCS_ROOT</a></li>
+          <li><a href="#cockpit_dir" id="markdown-toc-cockpit_dir">COCKPIT_DIR</a></li>
+          <li><a href="#cockpit_config_dir" id="markdown-toc-cockpit_config_dir">COCKPIT_CONFIG_DIR</a></li>
+          <li><a href="#cockpit_config_path" id="markdown-toc-cockpit_config_path">COCKPIT_CONFIG_PATH</a></li>
+          <li><a href="#cockpit_storage_folder" id="markdown-toc-cockpit_storage_folder">COCKPIT_STORAGE_FOLDER</a></li>
+          <li><a href="#cockpit_public_storage_folder" id="markdown-toc-cockpit_public_storage_folder">COCKPIT_PUBLIC_STORAGE_FOLDER</a></li>
+        </ul>
+      </li>
+      <li><a href="#registry" id="markdown-toc-registry">registry</a>        <ul>
+          <li><a href="#route" id="markdown-toc-route">route</a></li>
+          <li><a href="#base_url" id="markdown-toc-base_url">base_url</a></li>
+          <li><a href="#base_route" id="markdown-toc-base_route">base_route</a></li>
+          <li><a href="#docs_root" id="markdown-toc-docs_root">docs_root</a></li>
+          <li><a href="#other" id="markdown-toc-other">other</a></li>
+        </ul>
+      </li>
+      <li><a href="#paths" id="markdown-toc-paths">paths</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="type-constants">type constants</h2>
+
+<p>If no type constant is set to <code>1</code>, cockpit was called as library.</p>
+
+<h3 id="cockpit_admin">COCKPIT_ADMIN</h3>
+
+<p><code>[COCKPIT_ADMIN] =&gt; 1</code></p>
+
+<ul>
+  <li>called <code>index.php</code></li>
+  <li>triggered <code>admin.init</code></li>
+</ul>
+
+<h3 id="cockpit_cli">COCKPIT_CLI</h3>
+
+<p><code>[COCKPIT_CLI] =&gt; </code></p>
+
+<p>called from cli <code>./cp ...</code></p>
+
+<h3 id="cockpit_api_request">COCKPIT_API_REQUEST</h3>
+
+<p><code>[COCKPIT_API_REQUEST] =&gt; 0</code></p>
+
+<ul>
+  <li>api request</li>
+  <li>called via <code>domain.tld/path/to/cockpit/api/...</code></li>
+</ul>
+
+<h2 id="other-constants">other constants</h2>
+
+<h3 id="cockpit_start_time">COCKPIT_START_TIME</h3>
+
+<p><code>[COCKPIT_START_TIME] =&gt; 1542646468.3189</code></p>
+
+<p>for debugging: duration time</p>
+
+<h3 id="cockpit_admin_route">COCKPIT_ADMIN_ROUTE</h3>
+
+<p><code>[COCKPIT_ADMIN_ROUTE] =&gt; /</code></p>
+
+<ul>
+  <li>current route, url part after <code>domain.tld/path/to/cockpit</code></li>
+  <li>e. g. <code>/collections</code></li>
+</ul>
+
+<h2 id="path-constants">path constants</h2>
+
+<h3 id="cockpit_base_url">COCKPIT_BASE_URL</h3>
+
+<p><code>[COCKPIT_BASE_URL] =&gt; /cockpit</code></p>
+
+<ul>
+  <li>for <code>COCKPIT_ADMIN_ROUTE</code> detection</li>
+  <li>sets registry: <code>base_url</code></li>
+</ul>
+
+<ul class="info alert">
+  <li>What is the difference between <code>COCKPIT_BASE_URL</code> and <code>COCKPIT_BASE_ROUTE</code>?</li>
+</ul>
+
+<h3 id="cockpit_base_route">COCKPIT_BASE_ROUTE</h3>
+
+<p><code>[COCKPIT_BASE_ROUTE] =&gt; /cockpit</code></p>
+
+<ul>
+  <li>sets registry: <code>base_route</code></li>
+</ul>
+
+<ul class="info alert">
+  <li>What is the difference between <code>COCKPIT_BASE_URL</code> and <code>COCKPIT_BASE_ROUTE</code>?</li>
+</ul>
+
+<h3 id="cockpit_site_dir">COCKPIT_SITE_DIR</h3>
+
+<p><code>[COCKPIT_SITE_DIR] =&gt; /var/www/virtual/username</code></p>
+
+<ul>
+  <li>parent of root</li>
+  <li>used for relative paths of assets</li>
+  <li>used for relative path of config file in <code>/settings/edit</code></li>
+  <li>sets registry: <code>site</code></li>
+</ul>
+
+<h3 id="cockpit_docs_root">COCKPIT_DOCS_ROOT</h3>
+
+<p><code>[COCKPIT_DOCS_ROOT] =&gt; /var/www/virtual/username/html</code></p>
+
+<ul>
+  <li>root</li>
+  <li>used for relative paths of assets</li>
+  <li>part of define <code>COCKPIT_SITE_DIR</code></li>
+  <li>sets registry: <code>docs_root</code></li>
+</ul>
+
+<h3 id="cockpit_dir">COCKPIT_DIR</h3>
+
+<p><code>[COCKPIT_DIR] =&gt; /var/www/virtual/username/html/cockpit</code></p>
+
+<p class="info alert">to do</p>
+
+<h3 id="cockpit_config_dir">COCKPIT_CONFIG_DIR</h3>
+
+<p><code>[COCKPIT_CONFIG_DIR] =&gt; /var/www/virtual/username/html/cockpit/config</code></p>
+
+<ul>
+  <li>location of config dir</li>
+  <li>sets paths: <code>#config</code></li>
+</ul>
+
+<h3 id="cockpit_config_path">COCKPIT_CONFIG_PATH</h3>
+
+<p><code>[COCKPIT_CONFIG_PATH] =&gt; /var/www/virtual/username/html/cockpit/config/config.yaml</code></p>
+
+<p>can be <code>COCKPIT_CONFIG_DIR/*.php</code> of <code>COCKPIT_CONFIG_DIR/*.yaml</code></p>
+
+<h3 id="cockpit_storage_folder">COCKPIT_STORAGE_FOLDER</h3>
+
+<p><code>[COCKPIT_STORAGE_FOLDER] =&gt; /var/www/virtual/username/html/cockpit/storage</code></p>
+
+<ul>
+  <li>sets paths: <code>#storage</code></li>
+  <li>sets paths: <code>#data</code></li>
+  <li>sets paths: <code>#cache</code></li>
+  <li>sets paths: <code>#tmp</code></li>
+  <li>also used in install script for writable check</li>
+</ul>
+
+<h3 id="cockpit_public_storage_folder">COCKPIT_PUBLIC_STORAGE_FOLDER</h3>
+
+<p><code>[COCKPIT_PUBLIC_STORAGE_FOLDER] =&gt; /var/www/virtual/username/html/cockpit/storage</code></p>
+
+<ul>
+  <li>sets paths: <code>#pstorage</code></li>
+  <li>sets paths: <code>#thumbs</code></li>
+  <li>sets paths: <code>#uploads</code></li>
+</ul>
+
+<h2 id="registry">registry</h2>
+
+<h3 id="route">route</h3>
+
+<p><code>[route] =&gt; /</code></p>
+
+<p>see <a href="#cockpit_admin_route">COCKPIT_ADMIN_ROUTE</a></p>
+
+<h3 id="base_url">base_url</h3>
+
+<p><code>[base_url] =&gt; /cockpit</code></p>
+
+<p class="info alert">to do</p>
+
+<ul>
+  <li>used in
+    <ul>
+      <li>App
+        <ul>
+          <li><code>baseUrl($path)</code>
+            <ul>
+              <li>calls: <code>pathToUrl($path)</code></li>
+              <li>called from: <code>base($path)</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>LimeExtra
+        <ul>
+          <li><code>@base()</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="base_route">base_route</h3>
+
+<p><code>[base_route] =&gt; /cockpit</code></p>
+
+<ul>
+  <li>used in
+    <ul>
+      <li>App
+        <ul>
+          <li><code>routeUrl($path)</code>
+            <ul>
+              <li><code>route()</code></li>
+              <li><code>reroute($path)</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>LimeExtra
+        <ul>
+          <li><code>@route()</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="docs_root">docs_root</h3>
+
+<p><code>[docs_root] =&gt; /var/www/virtual/username/html</code></p>
+
+<ul>
+  <li>used in
+    <ul>
+      <li>App
+        <ul>
+          <li><code>pathToUrl($path, $full = false)</code>
+            <ul>
+              <li><code>assets($src, $version=false)</code>
+                <ul>
+                  <li><code>style($href, $version=false)</code></li>
+                  <li><code>script($href, $version=false)</code></li>
+                </ul>
+              </li>
+              <li><code>baseUrl($path)</code>
+                <ul>
+                  <li><code>base($path)</code></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>LimeExtra
+        <ul>
+          <li><code>@base()</code></li>
+          <li><code>@assets()</code></li>
+          <li><code>@url()</code></li>
+          <li>``</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="other">other</h3>
+
+<p><code>[site_url] =&gt; https://username.uber.space</code><br />
+<code>[base_host] =&gt; username.uber.space</code><br />
+<code>[base_port] =&gt; 443</code></p>
+
+<p>…</p>
+
+<h2 id="paths">paths</h2>
+
+<p><code>[#root] =&gt; /var/www/virtual/username/html/cockpit</code><br />
+<code>[#storage] =&gt; /var/www/virtual/username/html/cockpit/storage</code><br />
+<code>[#pstorage] =&gt; /var/www/virtual/username/html/cockpit/storage</code><br />
+<code>[#data] =&gt; /var/www/virtual/username/html/cockpit/storage/data</code><br />
+<code>[#cache] =&gt; /var/www/virtual/username/html/cockpit/storage/cache</code><br />
+<code>[#tmp] =&gt; /var/www/virtual/username/html/cockpit/storage/tmp</code><br />
+<code>[#thumbs] =&gt; /var/www/virtual/username/html/cockpit/storage/thumbs</code><br />
+<code>[#uploads] =&gt; /var/www/virtual/username/html/cockpit/storage/uploads</code><br />
+<code>[#modules] =&gt; /var/www/virtual/username/html/cockpit/modules</code><br />
+<code>[#addons] =&gt; /var/www/virtual/username/html/cockpit/addons</code><br />
+<code>[#config] =&gt; /var/www/virtual/username/html/cockpit/config</code><br />
+<code>[assets] =&gt; /var/www/virtual/username/html/cockpit/assets</code><br />
+<code>[site] =&gt; /var/www/virtual/username</code></p>
+    </main>
+    <footer>
+      <a href="#top" class="button jumptotop" title="an den Anfang des Dokuments springen"></a>
+    </footer>
+  </body>
+</html>
