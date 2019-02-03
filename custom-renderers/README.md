@@ -16,12 +16,16 @@ If you want to write your own renderers, have a look at [app.utils.js][3] and di
 **bootstrap.php**
 
 ```php
-$app->on('admin.init', function(){
-    
-    $this->helper('admin')->addAssets('path/to/custom.js');
-    $this->helper('admin')->addAssets('path/to/custom.css');
-    
-});
+if (COCKPIT_ADMIN && !COCKPIT_API_REQUEST) {
+
+    $app->on('admin.init', function(){
+
+        $this->helper('admin')->addAssets('path/to/custom.js');
+        $this->helper('admin')->addAssets('path/to/custom.css');
+
+    });
+
+}
 ```
 
 **custom.js**
