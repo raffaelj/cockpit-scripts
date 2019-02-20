@@ -4,7 +4,7 @@
 
 Add this code snippet to the bootstrap of your addon or in `config/bootstrap.php`. Now you can call it from everywhere with `debug($variable);` and it writes a new line to `/storage/tmp/.log.txt`. I named it `.log` with a starting dot to let the `.htaccess` deny public access to it.
 
-```
+```php
 // simple logging for debugging
 function debug($message) {
 
