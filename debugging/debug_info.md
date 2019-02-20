@@ -1,5 +1,27 @@
 # Cockpit debugging
 
+## a very simple debug helper
+
+Add this code snippet to the bootstrap of your addon or in `config/bootstrap.php`. Now you can call it from everywhere with `debug($variable);` and it writes a new line to `/storage/tmp/.log.txt`. I named it `.log` with a starting dot to let the `.htaccess` deny public access to it.
+
+```
+// simple logging for debugging
+function debug($message) {
+
+    global $cockpit;
+
+    if (!is_string($message) || !is_numeric($message))
+        $message = json_encode($message);
+
+    $time = date('Y-m-d H:i:s', time());
+
+    $cockpit('fs')->write("#storage:tmp/.log.txt", "$time - $message\r\n", FILE_APPEND);
+
+}
+```
+
+## add debugging info on top of Cockpit pages
+
 For debugging create a file `path/to/cockpit/config/bootstrap.php` and add
 
 ```php
