@@ -15,5 +15,5 @@
 */
 
 $app->on('collections.entry.aside', function() {
-    echo '<span class="uk-hidden">{ group = "Main" }</span>';
+    echo '<span if="{ !group }" class="uk-hidden">{ group = "Main" }</span>';
 });
