@@ -9,7 +9,7 @@ A collection of code snippets with annotations to modify [Cockpit CMS](https://g
 
 And please update to Version 0.8.2 or above. There were a few securitiy fixes for the backend and for the api.
 
-## Informations about Cockpit
+## Information about Cockpit
 
 It was a bit confusing in the past, to find the right places for informations or to ask for help.
 
@@ -17,6 +17,7 @@ It was a bit confusing in the past, to find the right places for informations or
 * [Official Docs](https://getcockpit.com/documentation) --> needs some help to get up to date
 * [Github Issues](https://github.com/agentejo/cockpit/issues)
 * read the code --> it's interesting and there are a lot of hidden features
+* [inofficial docs](https://zeraton.gitlab.io/cockpit-docs/) --> contains some info, work in progress, [source](https://github.com/zeraton-de/cockpit-docs)
 
 ### outdated
 
@@ -29,7 +30,7 @@ It was a bit confusing in the past, to find the right places for informations or
 
 ## Cockpit Addons
 
-Curated [List of Cockpit Addons](https://discourse.getcockpit.com/t/list-of-cockpit-addons/234) in the Community Forum
+Curated [List of Cockpit Addons](https://discourse.getcockpit.com/t/list-of-cockpit-addons/234) in the Community Forum by [serjoscha87](https://github.com/serjoscha87)
 
 ### Addons, I wrote
 
@@ -58,7 +59,3 @@ Create unique slugs if you don't want the `_id` as unique identifier.
 #### [ModuleLink](https://github.com/raffaelj/cockpit_ModuleLink)
 
 Create and populate whole modules instead of single collection entries.
-
-#### [MoreOptions](https://github.com/raffaelj/cockpit_MoreOptions)
-
-Test addon, some more features for collections, may change completely over time
