@@ -25,3 +25,57 @@ if (strpos(__DIR__, ':\\', 1)) { // is windows environment
 
 }
 ```
+
+## store config, storage and addons outside of web root
+
+example setup: 
+
+```
+.../user/                             # not public
+         cockpit_data/                # not public
+                      addons/
+                      config/
+                      storage/
+         html/                        # public
+              cockpit/
+                      bootstrap.php
+                      defines.php
+                      ...
+              ...
+```
+
+Defining `COCKPIT_DATA_DIR` is not necessary, but it is useful if you use the folder multiple times in different places.
+
+**storage:**
+
+```php
+// custom storage dir
+define('COCKPIT_DATA_DIR', str_replace(DIRECTORY_SEPARATOR, '/', realpath(__DIR__.'/../cockpit_data')));
+define('COCKPIT_STORAGE_FOLDER', COCKPIT_DATA_DIR.'/storage');
+```
+
+**config:**
+
+If you change this, loading custom css from `config/cockpit/style.css` and loading custom fields from `config/tags` won't work anymore.
+
+```php
+// custom config dir
+define('COCKPIT_DATA_DIR', str_replace(DIRECTORY_SEPARATOR, '/', realpath(__DIR__.'/../cockpit_data')));
+define('COCKPIT_CONFIG_DIR', COCKPIT_DATA_DIR.'/config');
+```
+
+To load addons from the folder above the web root, too, add the full path to `config/config.yaml`, e. g.:
+
+```yaml
+loadmodules:
+    - var/www/virtual/user/cockpit_data/addons
+```
+
+Or if you use a dynamic `config.php` and defined the path already, add this to `config/config.php`:
+
+```php
+<?php
+return [
+    'loadmodules' => [COCKPIT_DATA_DIR.'/addons'],
+];
+```
