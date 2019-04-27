@@ -5,7 +5,7 @@ A collection of code snippets with annotations to modify [Cockpit CMS](https://g
 ## Privacy and security related snippets
 
 * [restrict-built-in-helpers/bootstrap.php](https://github.com/raffaelj/cockpit-scripts/blob/master/restrict-built-in-helpers/bootstrap.php)
-* [custom-api-endpoints/listUsers.php](https://github.com/raffaelj/cockpit-scripts/blob/master/custom-api-endpoints/listUsers.php)
+* <del>[custom-api-endpoints/listUsers.php](https://github.com/raffaelj/cockpit-scripts/blob/master/custom-api-endpoints/listUsers.php)</del> ([fixed][1] since 2018-11-28)
 
 And please update to Version 0.8.2 or above. There were a few securitiy fixes for the backend and for the api.
 
@@ -59,3 +59,6 @@ Create unique slugs if you don't want the `_id` as unique identifier.
 #### [ModuleLink](https://github.com/raffaelj/cockpit_ModuleLink)
 
 Create and populate whole modules instead of single collection entries.
+
+
+[1]: https://github.com/agentejo/cockpit/commit/2ed6bc45c89b836b9fd701d56df91bc03a4457c7#diff-2ea5a82a7d5b8bfdd9f886075f0306bcR144
