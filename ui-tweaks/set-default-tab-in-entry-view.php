@@ -8,12 +8,11 @@
   tab is "All". All non-grouped fields are in "Main" and that's the tab, that
   should be default.
 
-  This snippet reassigns the variable on mount. I don't know, how to assign a 
-  variable in a riot tag outside of the script part without printing it.
-  That's, why I set it to hidden.
+  When the page loads, `this.group` is an empty string. After the first
+  call of `toggleGroup()` it is 'GroupName' or false.
 
 */
 
 $app->on('collections.entry.aside', function() {
-    echo '<span if="{ !group }" class="uk-hidden">{ group = "Main" }</span>';
+    echo '<span if="{ group === \'\' && !(group = \'Main\') }" class="">test</span>';
 });
