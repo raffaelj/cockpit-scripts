@@ -7,12 +7,12 @@
   
 */
 
-$app->on('cockpit.assets.save', function(&$assets) use ($app) {
+$app->on('cockpit.assets.save', function(&$assets) {
     
     foreach ($assets as &$asset) {
         
         // add paths
-        $asset['absolute_path'] = $app['site_url'] . $app['base_url'] . '/storage/uploads' . $asset['path'];
+        $asset['absolute_path'] = $this['site_url'] . $this['base_url'] . '/storage/uploads' . $asset['path'];
         
         $asset['real_path'] = COCKPIT_DIR . '/storage/uploads' . $asset['path'];
         
