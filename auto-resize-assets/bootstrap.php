@@ -25,12 +25,12 @@ $app->on('cockpit.assets.save', function(&$assets) {
 
     foreach ($assets as &$asset) {
 
-        if (isset($asset['width']) && isset($asset['height']) && $asset['width'] > $width) {
+        if (isset($asset['width']) && isset($asset['height']) && $asset['width'] > $maxWidth) {
 
             $path = $this->path('#uploads:' . ltrim($asset['path'], '/'));
 
             // resize image with `/lib/Lime/Helper/Image.php`, that calls claviska\SimpleImage
-            $img = $this('image')->take($path)->{$method}($width, $asset['height']);
+            $img = $this('image')->take($path)->{$method}($maxWidth, $asset['height']);
 
             $result = file_put_contents($path, $img->toString(null, $quality));
 
