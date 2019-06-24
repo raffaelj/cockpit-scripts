@@ -14,6 +14,12 @@
  * 2. Colorthief picks the colors from the original file,
  * 3. SimpleImage resizes the file,
  * 4. and if you upload multiple images at once, steps 1-3 are multiplied
+ *
+ * Related discussion:
+ * https://discourse.getcockpit.com/t/how-to-downsize-uploaded-image-assets-to-max-width-height/883
+ * 
+ * A modified version with maxHeight and group acl variables by @creatingo:
+ * https://discourse.getcockpit.com/t/how-to-downsize-uploaded-image-assets-to-max-width-height/883/5?u=raffaelj
  */
 
 $app->on('cockpit.assets.save', function(&$assets) {
