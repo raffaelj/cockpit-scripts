@@ -1,5 +1,9 @@
 # How to use Cockpit as a library
 
+deprecated - use the [cockpit-lib-skeleton repository](https://github.com/raffaelj/cockpit-lib-skeleton) instead.
+
+--------------------------------------------------------------------------------
+
 My setup...
 
 System: Xampp7 on a Windows machine
