@@ -2,7 +2,7 @@
 
 ## Options
 
-```json
+```js
 {
     "prefix": "og:",    // (string), default: ""
     "format": "array",  // (string), default: "object"
