@@ -290,7 +290,7 @@ App.Utils.renderer['key-value-pair'] = function(v, meta) {
     }
 
     if (!v.length) return '';
-    
+
     warning = !warning ? '' : ' <span class="uk-badge uk-badge-danger" title="'+App.i18n.get('Wrong data format')+'" data-uk-tooltip>!</span>'
 
     return '<span class="uk-badge" title="'+v.join('<br>')+'" data-uk-tooltip>'+v.length+'</span>' + warning;
