@@ -1,7 +1,7 @@
 /**
  * key-value-pair field for Cockpit CMS
  * 
- * @version 0.1.0
+ * @version 0.1.1
  * @author  Raffael Jesche
  * @license MIT
  * @see     https://github.com/raffaelj/cockpit-scripts/blob/master/custom-fields/field-key-value-pair.tag
@@ -14,6 +14,9 @@
         .notice {
             background-color: aliceblue !important;
         }
+        .middle {
+            padding: 4px 0;
+        }
     </style>
 
     <div if="{ wrongDataFormat }" class="uk-text-center uk-margin">
@@ -24,14 +27,16 @@
     <div ref="itemscontainer" class="uk-sortable">
         <div class="uk-panel uk-panel-box uk-panel-card uk-margin-small" data-idx="{ idx }" each="{ key,idx in keys }">
 
-            <div class="uk-flex uk-flex-middle">
+            <div class="uk-flex">
 
-                <span class="uk-text-muted" if="{ pfx }">{ pfx }&nbsp;</span>
+                <span class="uk-text-muted middle" if="{ pfx }">{ pfx }&nbsp;</span>
                 <input class="uk-width-1-4 { duplicates.indexOf(idx) != -1 && (format == 'object' && 'uk-form-danger' || 'notice') }" type="text" bind="keys.{idx}" />
-                <span class="uk-text-muted">&nbsp;:&nbsp;</span>
+                <span class="uk-text-muted middle">&nbsp;:&nbsp;</span>
                 <input class="uk-width-3-4" type="text" bind="values.{ idx }" />
 
-                <a class="uk-icon-trash" data-idx="{ idx }" onclick="{ deletePair }" aria-label="{ App.i18n.get('Delete item') }"></a>
+                <span class="middle">
+                    <a href="#" class="uk-icon-trash" data-idx="{ idx }" onclick="{ deletePair }" aria-label="{ App.i18n.get('Delete item') }"></a>
+                </span>
             </div>
 
         </div>
@@ -47,6 +52,7 @@
         riot.util.bind(this);
 
         this.keys = [];
+        this.defaultKeys = [];
         this.values = [];
         this.duplicates = [];
         this.value = [];
@@ -60,6 +66,7 @@
             this.pfx    = opts.prefix || '';
             this.format = opts.format || 'object';
             this.limit  = opts.limit  || false;
+            this.defaultKeys = opts.defaultKeys || [];
 
             this.updateKeysValues();
 
@@ -108,12 +115,12 @@
 
             this.keys.forEach(function(k,i) {
 
-                if ($this.format == 'array' && k.length && $this.values[i] !== undefined) {
-                    $this.value.push({[$this.pfx+k]:$this.values[i]});
+                if ($this.format == 'array' && k.length) {
+                    $this.value.push({[$this.pfx+k]:$this.values[i] || ''});
                 }
 
-                if ($this.format == 'object' && k.length && $this.values[i] !== undefined) {
-                    $this.value[$this.pfx+k] = $this.values[i];
+                if ($this.format == 'object' && k.length) {
+                    $this.value[$this.pfx+k] = $this.values[i] || '';
                 }
 
                 var index = $this.keys.indexOf(k);
@@ -130,6 +137,12 @@
 
             this.keys = [];
             this.values = [];
+
+            if ( (this.format == 'array' && Array.isArray(this.value) && !this.value.length)
+              || (this.format == 'object' && !Object.keys(this.value).length)
+                ) {
+                this.keys = this.defaultKeys;
+            }
 
             if (this.format == 'array' && Array.isArray(this.value) && this.value.length) {
 
@@ -215,10 +228,10 @@
                 var idx = Number(this.getAttribute('data-idx'));
 
                 if ($this.format == 'array') {
-                    items.push($this.value[Number(this.getAttribute('data-idx'))]);
+                    items.push({[$this.keys[idx]]:$this.values[idx] || ''});
                 }
                 if ($this.format == 'object') {
-                    items[$this.keys[idx]] = $this.values[idx];
+                    items[$this.keys[idx]] = $this.values[idx] || '';
                 }
 
             });

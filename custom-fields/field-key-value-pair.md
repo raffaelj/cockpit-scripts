@@ -4,11 +4,12 @@
 
 ```js
 {
-    "prefix": "og:",    // (string), default: ""
-    "format": "array",  // (string), default: "object"
-    "limit": 5,         // (int),    default: 0 (unlimited)
-    "sortable": true,   // (bool),   default: false
-    "safeDelete": true, // (bool),   default: false
+    "prefix": "og:",                         // (string), default: ""
+    "format": "array",                       // (string), default: "object"
+    "limit": 5,                              // (int),    default: 0 (unlimited)
+    "sortable": true,                        // (bool),   default: false
+    "safeDelete": true,                      // (bool),   default: false
+    "defaultKeys" : ['title', 'description'] // (array),  default: []
 }
 ```
 
@@ -23,6 +24,10 @@ Change the order of the items via drag and drop.
 ### limit
 
 Limit the amount of items.
+
+### defaultKeys
+
+Display default keys with empty values. If the field has data (entry was saved before), the default fields aren't displayed.
 
 ### prefix
 
@@ -70,7 +75,7 @@ The array output allows duplicates. Duplicates are marked light blue.
     "image": "image_url"
   },
   {
-    "image": "image_url"
+    "image": "another_image_url"
   }
 ]
 ```
