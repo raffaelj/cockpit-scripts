@@ -138,7 +138,8 @@
             this.keys = [];
             this.values = [];
 
-            if ( (this.format == 'array' && Array.isArray(this.value) && !this.value.length)
+            if ( !this.value
+              || (this.format == 'array' && Array.isArray(this.value) && !this.value.length)
               || (this.format == 'object' && !Object.keys(this.value).length)
                 ) {
                 this.keys = this.defaultKeys;
