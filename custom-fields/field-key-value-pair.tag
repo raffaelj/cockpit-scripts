@@ -131,6 +131,7 @@
             });
 
             $this.$setValue(this.value);
+
         });
 
         updateKeysValues() {
@@ -177,7 +178,7 @@
             this.keys.push('');
 
             setTimeout(function() {
-                App.$('[data-idx=' + ($this.keys.length - 1) + '] input:first-of-type').get(0).focus();
+                App.$('[data-idx=' + ($this.keys.length - 1) + '] input:first-of-type', $this.root).get(0).focus();
             }, 50);
         }
 
