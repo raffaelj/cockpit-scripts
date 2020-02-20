@@ -5,11 +5,12 @@
 ```js
 {
     "prefix": "og:",                         // (string), default: ""
-    "format": "array",                       // (string), default: "object"
+    "format": "array",                       // (string) "array|object", default: "object"
     "limit": 5,                              // (int),    default: 0 (unlimited)
     "sortable": true,                        // (bool),   default: false
     "safeDelete": true,                      // (bool),   default: false
     "defaultKeys" : ['title', 'description'] // (array),  default: []
+    "displayPrefix" : "og:"                  // (string), default: ""
 }
 ```
 
@@ -48,6 +49,10 @@ output (format: array, prefix: og):
   }
 ]
 ```
+
+### displayPrefix
+
+Display a key prefix only while editing. Other than the `prefix`, the `displayPrefix` won't be added to the saved key names.
 
 ### format
 

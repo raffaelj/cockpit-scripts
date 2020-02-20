@@ -1,7 +1,7 @@
 /**
  * key-value-pair field for Cockpit CMS
  * 
- * @version 0.1.1
+ * @version 0.1.2
  * @author  Raffael Jesche
  * @license MIT
  * @see     https://github.com/raffaelj/cockpit-scripts/blob/master/custom-fields/field-key-value-pair.tag
@@ -29,7 +29,7 @@
 
             <div class="uk-flex">
 
-                <span class="uk-text-muted middle" if="{ pfx }">{ pfx }&nbsp;</span>
+                <span class="uk-text-muted middle" if="{ dpfx }">{ dpfx }&nbsp;</span>
                 <input class="uk-width-1-4 { duplicates.indexOf(idx) != -1 && (format == 'object' && 'uk-form-danger' || 'notice') }" type="text" bind="keys.{idx}" />
                 <span class="uk-text-muted middle">&nbsp;:&nbsp;</span>
                 <input class="uk-width-3-4" type="text" bind="values.{ idx }" />
@@ -57,6 +57,7 @@
         this.duplicates = [];
         this.value = [];
         this.pfx = '';
+        this.dpfx = '';
         this.format = '';
         this.limit = 0;
         this.wrongDataFormat = false;
@@ -64,6 +65,7 @@
         this.on('mount', function() {
 
             this.pfx    = opts.prefix || '';
+            this.dpfx   = opts.displayPrefix || opts.prefix || '';
             this.format = opts.format || 'object';
             this.limit  = opts.limit  || false;
             this.defaultKeys = opts.defaultKeys || [];
