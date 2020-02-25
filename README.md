@@ -32,33 +32,5 @@ It was a bit confusing in the past, to find the right places for informations or
 
 Curated [List of Cockpit Addons](https://discourse.getcockpit.com/t/list-of-cockpit-addons/234) in the Community Forum by [serjoscha87](https://github.com/serjoscha87)
 
-### Addons, I wrote
-
-Most of them are "work in progress". Feel free to contribute.
-
-#### [SelectRequestOptions](https://github.com/raffaelj/cockpit_SelectRequestOptions)
-
-Select field with options based on (custom) requests
-
-#### [FormValidation](https://github.com/raffaelj/cockpit_FormValidation)
-
-Form builder and form validator
-
-* supports honeypot and content validation to trick spam bots
-
-#### [Feed](https://github.com/raffaelj/cockpit_Feed)
-
-RSS Feed output for collections
-
-#### [UniqueSlugs](https://github.com/raffaelj/cockpit_UniqueSlugs)
-
-Create unique slugs if you don't want the `_id` as unique identifier.
-
-* supports slug generation of nested fields
-
-#### [ModuleLink](https://github.com/raffaelj/cockpit_ModuleLink)
-
-Create and populate whole modules instead of single collection entries.
-
 
 [1]: https://github.com/agentejo/cockpit/commit/2ed6bc45c89b836b9fd701d56df91bc03a4457c7#diff-2ea5a82a7d5b8bfdd9f886075f0306bcR144
