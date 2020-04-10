@@ -155,11 +155,12 @@ foreach ($files as $k => $file) {
 
     $memory = $app->helper('utils')->formatSize(\memory_get_usage(true));
     $peak   = $app->helper('utils')->formatSize(\memory_get_peak_usage(true));
+    $i = $k + 1;
 
     $return = $app->module('cockpit')->addAssets([$file], $meta[$k]);
 
-    if (!empty($return)) CLI::writeln("Imported $k of $count files | mem: $memory | peak: $peak");
-    else CLI::writeln("Failed $k of $count files | mem: $memory | peak: $peak", false);
+    if (!empty($return)) CLI::writeln("Imported $i of $count files | mem: $memory | peak: $peak");
+    else CLI::writeln("Failed $i of $count files | mem: $memory | peak: $peak", false);
 }
 
 $seconds = time() - $time;
