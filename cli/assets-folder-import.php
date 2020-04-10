@@ -40,13 +40,19 @@ $folders = [];
 $meta = [];
 
 // create virtual parent folder
+$folderName = basename($dir);
 $folder = [
-    'name' => basename($dir),
+    'name' => $folderName,
     '_p' => '',
     '_by' => '',
 ];
-$pfid = !$list ? $app->storage->save('cockpit/assets_folders', $folder)
-        : 'id::'.basename($dir);
+
+if (!$list) {
+    $pfid = $app->storage->save('cockpit/assets_folders', $folder);
+    CLI::writeln("Created new virtual folder $folderName - $pfid");
+} else {
+    $pfid = 'id::'.$folderName;
+}
 
 $folders[$dir] = [
     'name' => basename($dir),
