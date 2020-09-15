@@ -1,4 +1,4 @@
-// version: 0.1.0
+// version: 0.1.1
 // usage: https://github.com/raffaelj/cockpit-scripts/tree/master/custom-fields/field-simple-repeater.md
 
 App.Utils.renderer['simple-repeater'] = function(v) {
@@ -36,7 +36,7 @@ App.Utils.renderer['simple-repeater'] = function(v) {
         { App.i18n.get('No items') }.
     </div>
 
-    <div show="{mode=='edit' && items.length}" if="{field}">
+    <div show="{mode=='edit' && items.length}" if="{ field }">
 
         <div class="uk-margin uk-panel-box uk-panel-card" each="{ item,idx in items }" data-idx="{idx}">
             <div class="uk-badge uk-display-block uk-margin">{ field ? App.Utils.ucfirst( field.label || field.type) : '' }</div>
@@ -60,7 +60,7 @@ App.Utils.renderer['simple-repeater'] = function(v) {
 
     <div class="uk-margin">
         <a class="uk-button" onclick="{ add }" show="{ mode=='edit' }"><i class="uk-icon-plus-circle"></i> { App.i18n.get('Add item') }</a>
-        
+
         <a class="uk-button uk-button-success" onclick="{ updateorder }" show="{ mode=='reorder' }"><i class="uk-icon-check"></i> { App.i18n.get('Update order') }</a>
         <a class="uk-button uk-button-link uk-link-reset" onclick="{ switchreorder }" show="{ items.length > 1 }">
             <span show="{ mode=='edit' }"><i class="uk-icon-arrows"></i> { App.i18n.get('Reorder') }</span>
@@ -119,7 +119,16 @@ App.Utils.renderer['simple-repeater'] = function(v) {
                 return;
             }
 
-            this.items.push(null);
+            if (this.field.type == 'set') {
+                var item = {};
+                this.field.options.fields.forEach(function(field) {
+                    item[field.name] = null;
+                });
+                this.items.push(item);
+            }
+            else {
+                this.items.push(null);
+            }
 
         }
 
