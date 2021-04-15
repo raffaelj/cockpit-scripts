@@ -4,10 +4,10 @@ A collection of code snippets with annotations to modify [Cockpit CMS](https://g
 
 ## Privacy and security related snippets
 
-* [restrict-built-in-helpers/bootstrap.php](https://github.com/raffaelj/cockpit-scripts/blob/master/restrict-built-in-helpers/bootstrap.php)
+* [restrict-built-in-helpers/bootstrap.php](https://github.com/raffaelj/cockpit-scripts/blob/master/restrict-built-in-helpers/bootstrap.php) --> current/updated version is in [rljUtils addon](https://github.com/raffaelj)/cockpit_rljUtils
 * <del>[custom-api-endpoints/listUsers.php](https://github.com/raffaelj/cockpit-scripts/blob/master/custom-api-endpoints/listUsers.php)</del> ([fixed][1] since 2018-11-28)
 
-And please update to Version 0.8.2 or above. There were a few securitiy fixes for the backend and for the api.
+And please update to Version 0.12.0 or above. There have been multiple securitiy fixes for the backend and for the api.
 
 ## Information about Cockpit
 
