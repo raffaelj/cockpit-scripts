@@ -2,6 +2,14 @@
 
 A collection of code snippets with annotations to modify [Cockpit CMS](https://github.com/agentejo/cockpit)
 
+---
+
+**These code snippets are not compatible with Cockpit CMS v2.**
+
+See also [Cockpit CMS v1 docs](https://v1.getcockpit.com/documentation), [Cockpit CMS v1 repo](https://github.com/agentejo/cockpit) and [Cockpit CMS v2 docs](https://getcockpit.com/documentation/), [Cockpit CMS v2 repo](https://github.com/Cockpit-HQ/Cockpit).
+
+---
+
 ## Privacy and security related snippets
 
 * [restrict-built-in-helpers/bootstrap.php](https://github.com/raffaelj/cockpit-scripts/blob/master/restrict-built-in-helpers/bootstrap.php) --> current/updated version is in [rljUtils addon](https://github.com/raffaelj)/cockpit_rljUtils
