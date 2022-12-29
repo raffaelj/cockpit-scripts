@@ -1,11 +1,14 @@
 /**
- * key-value-pair field for Cockpit CMS
- * 
- * @version 0.1.2
+ * Key/value pair field for Cockpit CMS v1
+ *
+ * Usage is described in the corresponding `<field-name>.md` file.
+ *
+ * @version 0.2.0
  * @author  Raffael Jesche
  * @license MIT
- * @see     https://github.com/raffaelj/cockpit-scripts/blob/master/custom-fields/field-key-value-pair.tag
- * @see     https://github.com/raffaelj/cockpit-scripts/blob/master/custom-fields/field-key-value-pair.md
+ *
+ * @see     https://github.com/raffaelj/cockpit_CpMultiplaneGUI/blob/master/assets/components
+ * @see     https://github.com/raffaelj/cockpit-scripts/blob/master/custom-fields
  */
 
 <field-key-value-pair>
@@ -17,11 +20,14 @@
         .middle {
             padding: 4px 0;
         }
+        .uk-button-text {
+            font-size: inherit;
+        }
     </style>
 
     <div if="{ wrongDataFormat }" class="uk-text-center uk-margin">
         <span class="uk-text-warning"><i class="uk-icon-warning uk-icon-small"></i> { App.i18n.get('Wrong data format') }</span>
-        <a href="#" class="uk-button uk-button-primary" onclick="{ convertData }">{ App.i18n.get('Convert data') }</a>
+        <button type="button" class="uk-button uk-button-primary" onclick="{ convertData }">{ App.i18n.get('Convert data') }</button>
     </div>
 
     <div ref="itemscontainer" class="uk-sortable">
@@ -30,36 +36,37 @@
             <div class="uk-flex">
 
                 <span class="uk-text-muted middle" if="{ dpfx }">{ dpfx }&nbsp;</span>
-                <input class="uk-width-1-4 { duplicates.indexOf(idx) != -1 && (format == 'object' && 'uk-form-danger' || 'notice') }" type="text" bind="keys.{idx}" />
+                <input class="uk-width-1-4 { duplicates.indexOf(idx) != -1 && (format == 'object' && 'uk-form-danger' || 'notice') }" type="text" bind="keys.{ idx }" />
                 <span class="uk-text-muted middle">&nbsp;:&nbsp;</span>
                 <input class="uk-width-3-4" type="text" bind="values.{ idx }" />
 
                 <span class="middle">
-                    <a href="#" class="uk-icon-trash" data-idx="{ idx }" onclick="{ deletePair }" aria-label="{ App.i18n.get('Delete item') }"></a>
+                    <button type="button" class="uk-button uk-button-link uk-button-text uk-icon-trash" data-idx="{ idx }" onclick="{ deletePair }" aria-label="{ App.i18n.get('Delete item') }"></button>
                 </span>
             </div>
 
         </div>
     </div>
     <div class="uk-text-center uk-margin-small-top" if="{ !limit || limit > keys.length }">
-        <a href="#" class="uk-margin-small-top uk-icon-plus uk-icon-small" onclick="{ newPair }" aria-label="{ App.i18n.get('Add item') }"></a>
+        <button type="button" class="uk-button uk-button-link uk-margin-small-top uk-icon-plus uk-icon-small" onclick="{ newPair }" aria-label="{ App.i18n.get('Add item') }"></button>
     </div>
 
     <script>
 
         var $this = this;
-
         riot.util.bind(this);
 
-        this.keys = [];
         this.defaultKeys = [];
-        this.values = [];
-        this.duplicates = [];
-        this.value = [];
-        this.pfx = '';
-        this.dpfx = '';
-        this.format = '';
-        this.limit = 0;
+        this.pfx         = '';
+        this.dpfx        = '';
+        this.format      = '';
+        this.limit       = 0;
+
+        this.value       = [];
+        this.keys        = [];
+        this.values      = [];
+        this.duplicates  = [];
+
         this.wrongDataFormat = false;
 
         this.on('mount', function() {
@@ -80,7 +87,7 @@
                     $this.updateorder();
                 });
             }
-            
+
             if ( (this.value && this.format == 'array' && !Array.isArray(this.value))
               || (this.value && this.format == 'object' && Array.isArray(this.value) && this.value.length)
               ) {
@@ -106,6 +113,9 @@
 
             if (JSON.stringify(this.value) != JSON.stringify(value)) {
                 this.value = value;
+
+                this.updateKeysValues();
+                this.update();
             }
 
         }.bind(this);
@@ -138,27 +148,33 @@
 
         updateKeysValues() {
 
-            this.keys = [];
+            this.keys   = [];
             this.values = [];
 
             if ( !this.value
               || (this.format == 'array' && Array.isArray(this.value) && !this.value.length)
               || (this.format == 'object' && !Object.keys(this.value).length)
                 ) {
-                this.keys = this.defaultKeys;
+                this.keys = [].concat(this.defaultKeys);
             }
 
             if (this.format == 'array' && Array.isArray(this.value) && this.value.length) {
 
                 this.value.forEach(function(v,k) {
 
-                    if (v === null) { // fix null values (edge case...?)
+                    if (v === null) {
+                        // fix null values (edge case...?)
                         $this.value.splice(k,1);
                     }
 
                     else if (App.Utils.isObject(v)) {
-                        $this.keys.push(Object.keys(v)[0]
-                                      .replace(new RegExp('^'+$this.pfx), ''));
+
+                        if (!$this.pfx) {
+                            $this.keys.push(Object.keys(v)[0]);
+                        } else {
+                            $this.keys.push(Object.keys(v)[0].replace(new RegExp('^'+$this.pfx), ''));
+                        }
+
                         $this.values.push(Object.values(v)[0]);
                     }
 
@@ -167,8 +183,9 @@
             }
 
             else if (this.format == 'object' && App.Utils.isObject(this.value)) {
+
                 for (var k in this.value) {
-                    this.keys.push(k.replace(new RegExp('^'+$this.pfx), ''));
+                    this.keys.push(!this.pfx ? k : k.replace(new RegExp('^'+$this.pfx), ''));
                     this.values.push(this.value[k]);
                 }
             }
@@ -180,7 +197,8 @@
             this.keys.push('');
 
             setTimeout(function() {
-                App.$('[data-idx=' + ($this.keys.length - 1) + '] input:first-of-type', $this.root).get(0).focus();
+                var newEl = $this.root.querySelector('[data-idx="' + ($this.keys.length - 1) + '"] input:first-of-type');
+                if (newEl) newEl.focus();
             }, 50);
         }
 
@@ -292,7 +310,12 @@ App.Utils.renderer['key-value-pair'] = function(v, meta) {
             var k = Object.keys(e)[0];
             return k + ' : ' + v[i][k];
         });
-        if (meta.options && meta.options.format == 'object') warning = true;
+        if (!meta.options
+            || (meta.options
+                && (!meta.options.format || meta.options.format == 'object'))
+            ) {
+                warning = true;
+        }
     }
     else if (App.Utils.isObject(v) && !Array.isArray(v)) {
         var vv = [];

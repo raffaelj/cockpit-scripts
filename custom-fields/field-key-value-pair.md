@@ -1,4 +1,4 @@
-# key-value-pair field
+# Key/value pair field for Cockpit CMS v1
 
 ## Options
 
@@ -84,3 +84,12 @@ The array output allows duplicates. Duplicates are marked light blue.
   }
 ]
 ```
+
+## CHANGELOG
+
+### 0.2.0
+
+* improved accessibility
+* fixed updating issues (e. g., if changing parent language) and possible object mutation with `defaultKeys` if value is null
+* some code cleanup
+* improved performance if no prefix is specified
