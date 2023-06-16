@@ -411,23 +411,29 @@ Field definitions:
 
 ```js
 {
-    "field": {
-        "type": "text",
-        "label": "Title"
-    },
-    "display": null, // display value on re-order
-    "limit": null
+    "type": "repeater",
+    "name": "<name>",
+    "options": {
+        "field": {
+            "type": "text",
+            "label": "Title"
+        },
+        "display": null, // display value on re-order
+        "limit": null
+    }
 }
 ```
 
 Data format:
 
 ```js
-[
-    {
-        "value": "<content>",
-    },
-]
+{
+    "<name>": [
+        {
+            "value": "<content>",
+        },
+    ]
+}
 ```
 
 ##### multiple fields
@@ -436,40 +442,46 @@ Field definitions:
 
 ```js
 {
-    "fields": [
-        {
-            "type": "text",
-            "label": "Title"
-        },
-        {
-            "type": "text",
-            "label": "Content"
-        },
-    ],
-    "display": null, // display value on re-order
-    "limit": null
+    "type": "repeater",
+    "name": "<name>",
+    "options": {
+        "fields": [
+            {
+                "type": "text",
+                "label": "Title"
+            },
+            {
+                "type": "text",
+                "label": "Content"
+            },
+        ],
+        "display": null, // display value on re-order
+        "limit": null
+    }
 }
 ```
 
 Data format:
 
 ```js
-[
-    {
-        "field": {
-            "type": "text",
-            "label": "Title"
+{
+    "<name>": [
+        {
+            "field": {
+                "type": "text",
+                "label": "Title"
+            },
+            "value": "<content>"
         },
-        "value": "<content>"
-    },
-    {
-        "field": {
-            "type": "text",
-            "label": "Content"
-        },
-        "value": "<content>"
-    }
-]
+        {
+            "field": {
+                "type": "text",
+                "label": "Content"
+            },
+            "value": "<content>"
+        }
+    ]
+}
 ```
 
 #### select
