@@ -1102,39 +1102,39 @@ Old structure:
 ```php
 <?php
 return [
-  'name' => '<name>',
-  'label' => '<display name>',
-  '_id' => '<name>', // in older versions <name><unique-id>
-  'fields' => [],
-  'sortable' => true, // true: tree, false: collection
-  '_created' => 1234567890,
-  '_modified' => 1234567890,
-  'color' => '#AC92EC',
-  'icon' => 'adressbook.svg', // different implementation
-  'sort' => [
-    'column' => '_created', // default sort order
-    'dir' => -1,
-  ],
-  'contentpreview' => [
-    'enabled' => true,
-    'url' => '<preview url>',
-  ],
-  'in_menu' => true, // from old version, no effect anymore
-  'acl' => [
-    'author' => [
-      'entries_view' => true,
-      'entries_edit' => true,
-      'entries_create' => true,
-      'entries_delete' => true,
+    'name' => '<name>',
+    'label' => '<display name>',
+    '_id' => '<name>', // in older versions <name><unique-id>
+    'fields' => [],
+    'sortable' => true, // true: tree, false: collection
+    '_created' => 1234567890,
+    '_modified' => 1234567890,
+    'color' => '#AC92EC',
+    'icon' => 'adressbook.svg', // different implementation
+    'sort' => [
+        'column' => '_created', // default sort order
+        'dir' => -1,
     ],
-  ],
-  'rules' => [
-    'create' => ['enabled' => false],
-    'read' => ['enabled' => false],
-    'update' => ['enabled' => false],
-    'delete' => ['enabled' => false],
-  ],
-  // custom fields via addon
+    'contentpreview' => [
+        'enabled' => true,
+        'url' => '<preview url>',
+    ],
+    'in_menu' => true, // from old version, no effect anymore
+    'acl' => [
+        'author' => [
+        'entries_view' => true,
+        'entries_edit' => true,
+        'entries_create' => true,
+        'entries_delete' => true,
+        ],
+    ],
+    'rules' => [
+        'create' => ['enabled' => false],
+        'read' => ['enabled' => false],
+        'update' => ['enabled' => false],
+        'delete' => ['enabled' => false],
+    ],
+    // custom fields via addon
 ];
 ```
 
@@ -1147,30 +1147,30 @@ New structure:
 ```php
 <?php
 return [
-  'name' => 'treetest',
-  'label' => 'treetest',
-  'info' => '',
-  'type' => 'tree',
-  'fields' => [],
-  'preview' => [],
-  'group' => '',
-  'meta' => NULL,
-  '_created' => 1234567890,
-  '_modified' => 1234567890,
-  'color' => NULL,
-  'revisions' => false,
-  'preview' => [
-    0 => [
-      'name' => '<custom name>',
-      'uri' => '<preview url>',
+    'name' => 'treetest',
+    'label' => 'treetest',
+    'info' => '',
+    'type' => 'tree',
+    'fields' => [],
+    'preview' => [],
+    'group' => '',
+    'meta' => NULL,
+    '_created' => 1234567890,
+    '_modified' => 1234567890,
+    'color' => NULL,
+    'revisions' => false,
+    'preview' => [
+        0 => [
+        'name' => '<custom name>',
+        'uri' => '<preview url>',
+        ],
     ],
-  ],
-  // optional meta
-  'meta' => [
-    'sort' => [
-        '_created' => -1, // default sort order
+    // optional meta
+    'meta' => [
+        'sort' => [
+            '_created' => -1, // default sort order
+        ],
     ],
-  ],
 ];
 ```
 
