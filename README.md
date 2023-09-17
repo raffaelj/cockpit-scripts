@@ -1,6 +1,6 @@
 # Useful scripts and snippets for Cockpit CMS
 
-A collection of code snippets with annotations to modify [Cockpit CMS](https://github.com/agentejo/cockpit)
+A collection of code snippets with annotations to modify [Cockpit CMS v1](https://github.com/agentejo/cockpit)
 
 ---
 

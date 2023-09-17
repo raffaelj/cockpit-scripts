@@ -1,0 +1,24 @@
+{
+    "name": "raffaelj/cockpit-cms-migrate",
+    "type": "cockpit-module",
+    "description": "Migrate data from Cockpit CMS v1 to v2",
+    "keywords": ["cockpit", "data", "migration"],
+    "homepage": "https://github.com/raffaelj/cockpit-scripts",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Raffael Jesche",
+            "homepage": "https://www.rlj.me"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8",
+        "composer/installers": "^1.9"
+    },
+    "config": {
+        "vendor-dir": "lib/vendor"
+    },
+    "extra": {
+        "installer-name": "Migrate"
+    }
+}

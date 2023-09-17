@@ -6,6 +6,10 @@ Cockpit CMS v1 is compatible with PHP 7.4. If you run `composer update`, it shou
 
 Because I don't have an alternative for all missing functionalities (yet), I started [a fork of v1](https://codeberg.org/raffaelj/cockpit) with PHP 8.1 compatibility. PHP 8.1 reaches EOL in 2024-11-25. I won't add new features, but I may fix some bugs. The main reason for this fork is to buy some time until all my projects are migrated to Cockpit CMS v2 or to a different system.
 
+Because [I decided not to use Cockpit CMS v2 anymore](https://discourse.getcockpit.com/t/why-i-wont-upgrade-to-cockpit-cms-v2-and-might-leave-the-project/2860), I never finished the Migrate addon. Instead I published my first draft in this scripts repository as well:
+
+https://github.com/raffaelj/cockpit-scripts/tree/master/cockpit-cms-Migrate
+
 ## Research/Tutorials
 
 A few people already shared their migration steps:
